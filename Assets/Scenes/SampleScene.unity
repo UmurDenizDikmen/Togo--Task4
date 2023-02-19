@@ -5643,12 +5643,11 @@ MonoBehaviour:
   m_GameObject: {fileID: 6070526474806959495}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 29814c67191c8bd4580b61aca7e2e822, type: 3}
+  m_Script: {fileID: 11500000, guid: 47d3d348213420b4181bb5c821e72bba, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  speed: 100
+  speed: 3
   Collectables: []
-  Collects: {fileID: 2731176050487162524, guid: 35ac0a4dd4c8cf242ae74756e086c905, type: 3}
   GameOverPanel: {fileID: 617649449}
   FinishGamePanel: {fileID: 1499422444}
   PointText: {fileID: 1894048174}

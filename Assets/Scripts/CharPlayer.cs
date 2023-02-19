@@ -9,14 +9,10 @@ public class CharPlayer : MonoBehaviour
     public float speed;
     Rigidbody rg;
     public List<GameObject> Collectables = new List<GameObject>();
-    public GameObject Collects;
     public GameObject GameOverPanel;
     public GameObject FinishGamePanel;
     public TextMeshProUGUI PointText;
     private int Score;
-   
-
-    
     Vector3 offset;
     [SerializeField] private Transform PointofStack;
 
@@ -25,12 +21,6 @@ public class CharPlayer : MonoBehaviour
         rg = GetComponent<Rigidbody>();
         offset= new Vector3(0, 0.3f, 0);
         PointText.text = Score.ToString();
-    }
-
-
-    void Update()
-    {
-
     }
     private void FixedUpdate()
     {
@@ -72,7 +62,7 @@ public class CharPlayer : MonoBehaviour
         {
             if (Collectables.Count != 0)
             {
-                GameObject obj = Collectables;
+                GameObject obj = Collectables[Collectables.Count - 1];
                 Collectables.Remove(obj);
                 Destroy(obj);
                 PointofStack.position = PointofStack.position - (offset);
